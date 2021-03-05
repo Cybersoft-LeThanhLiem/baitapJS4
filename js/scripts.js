@@ -43,3 +43,8 @@ document.getElementById("btnSort").onclick = function () {
  * Bài 2: Chào hỏi
  */
 
+document.getElementById("btnMember").onclick = function () {
+    var member = document.getElementById("member");
+    var txtMember = member.options[member.selectedIndex].text;
+    document.getElementById("kqBai2").innerHTML = "Chào " + txtMember;
+}
